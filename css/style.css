@@ -1,0 +1,386 @@
+body{
+  background-color: #faf5e0
+}
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: rgb(8, 8, 8);
+    text-transform: none;
+    transition: 0.25s ease;
+}
+/*Botones de inicio*/
+
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+ul li {
+    text-decoration: none;
+    margin: 0 0.75em 0 0.75em;
+}
+
+ul:hover a {
+    color: #575757;
+}
+
+ul:hover a:hover {
+    color: #7c1885;
+    box-shadow: 0 2px 0 0 currentColor;
+}
+/*titulo principal*/
+.titulo{
+    background-color: #040b221e;
+    font-family: 'Pacifico', cursive;
+}
+/*fotos*/
+#foto1{
+    width: 20vw;
+    height: 45vh;
+    padding: 15px;
+    border-radius: 6%;
+    overflow: hidden;
+}
+
+#foto2{
+    width: 20vw;
+    height: 45vh;
+    border-radius: 6%;
+    overflow: hidden;
+}
+
+#foto3{
+    width: 20vw;
+    height: 45vh;
+    border-radius: 6%;
+    overflow: hidden;
+}
+/*texto de relleno con bordes*/
+p{
+    
+    color: #000000;
+    border: 5px solid #6cfc0c;
+    width: 50%;
+}
+/*barra de busqueda*/
+  /* From uiverse.io by @satyamchaudharydev */
+/* removing default style of button */
+
+.form button {
+  border: none;
+  background: none;
+  color: #75757e;
+}
+/* styling of whole input container */
+.form {
+  --timing: 0.3s;
+  --width-of-input: 200px;
+  --height-of-input: 40px;
+  --border-height: 2px;
+  --input-bg: #faf5e0;
+  --border-color: #7d0488;
+  --border-radius: 30px;
+  --after-border-radius: 1px;
+  position: relative;
+  width: var(--width-of-input);
+  height: var(--height-of-input);
+  display: flex;
+  align-items: center;
+  padding-inline: 0.8em;
+  border-radius: var(--border-radius);
+  transition: border-radius 0.5s ease;
+  background: var(--input-bg,#ffffff);
+}
+/* styling of Input */
+.input {
+  font-size: 0.9rem;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  padding-inline: 0.5em;
+  padding-block: 0.7em;
+  border: none;
+}
+/* styling of animated border */
+.form:before {
+  content: "";
+  position: absolute;
+  background: var(--border-color);
+  transform: scaleX(0);
+  transform-origin: center;
+  width: 100%;
+  height: var(--border-height);
+  left: 0;
+  bottom: 0;
+  border-radius: 1px;
+  transition: transform var(--timing) ease;
+}
+/* Hover on Input */
+.form:focus-within {
+  border-radius: var(--after-border-radius);
+}
+
+input:focus {
+  outline: none;
+}
+/* here is code of animated border */
+.form:focus-within:before {
+  transform: scale(1);
+}
+/* styling of close button */
+/* == you can click the close button to remove text == */
+.reset {
+  border: none;
+  background: none;
+  opacity: 0;
+  visibility: hidden;
+}
+/* close button shown when typing */
+input:not(:placeholder-shown) ~ .reset {
+  opacity: 1;
+  visibility: visible;
+}
+/* sizing svg icons */
+.form svg {
+  width: 17px;
+  margin-top: 3px;
+}
+  /*botones de arriba*/
+.centro{
+    display: flex;
+    flex-direction: row;
+    justify-content: center
+    
+  }
+
+  .derecha{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    
+  }
+
+  
+  .fotoss{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+  }
+  img{
+    padding: 0 17px;
+  }
+  .tit{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    justify-content: space-around;
+    
+  }
+  
+  .search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  h1{
+    margin-top: 80px;
+  }
+  .video1{
+    border: 5px solid #7f058f;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(24, 20, 20, 0.987);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+  }
+  
+  .login-box .user-box {
+    position: relative;
+  }
+  
+  .login-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+  }
+  
+  .login-box .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+  }
+  
+  .login-box .user-box input:focus ~ label,
+  .login-box .user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #bdb8b8;
+    font-size: 12px;
+  }
+  
+  .login-box form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #ffffff;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px
+  }
+  
+  .login-box a:hover {
+    background: #4b0175;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #4b0175,
+                0 0 25px #4b0175,
+                0 0 50px #4b0175,
+                0 0 100px #4b0175;
+  }
+  
+  .login-box a span {
+    position: absolute;
+    display: block;
+  }
+  
+  @keyframes btn-anim1 {
+    0% {
+      left: -100%;
+    }
+  
+    50%,100% {
+      left: 100%;
+    }
+  }
+  
+  .login-box a span:nth-child(1) {
+    bottom: 2px;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #4b0175);
+    animation: btn-anim1 2s linear infinite;
+  }
+  
+  .buzo{
+    width: 20vw;
+    height: 45vh;
+    padding: 15px;
+    border-radius: 8%;
+    overflow: hidden;
+    border: 5px solid #000000;
+    
+}
+  .buzos{
+    display: flex;
+    align-items: center;
+    height: 60vh;
+    display: flex;
+    justify-content: space-between; /* Distribuye el espacio entre las imágenes en el contenedor */
+    padding: 10%;
+    position: relative;
+    bottom: 200px;
+  }
+  .titulobuzo{
+    font-size: 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center
+  }
+
+  .pantalones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    justify-content: space-between; /* Distribuye el espacio entre las imágenes en el contenedor */
+    padding: 10%;
+    position: relative;
+    bottom: 200px;
+    
+  }
+  .pantalone{
+    width: 20vw;
+    height: 45vh;
+    padding: 15px;
+    border-radius: 6%;
+    overflow: hidden;
+    border: 5px solid #000000;
+  }
+  .titulopantalones{
+    font-size: 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center
+  }
+  .remeras{
+    display: flex;
+    align-items: center;
+    height: 60vh;
+    display: flex;
+    justify-content: space-between; /* Distribuye el espacio entre las imágenes en el contenedor */
+    padding: 10%;
+    position: relative;
+    bottom: 200px;
+  }
+  .remera{
+    width: 20vw;
+    height: 45vh;
+    padding: 15px;
+    border-radius: 6%;
+    overflow: hidden;
+    border: 5px solid #000000;
+  }
+  .tituloremeras{
+    font-size: 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center
+  }
+  
+  .centro{
+    display: grid;
+    gap: 1.5em;
+    align-items: center;
+    grid-template-columns: repeat(autofit, minmax(300px, 1fr ));
+  }
+  @media (min-width:693px) {
+
+    .centro{
+      margin: unset;
+    }
+  }
+  
