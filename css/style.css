@@ -165,16 +165,6 @@ input:not(:placeholder-shown) ~ .reset {
     
   }
 
-  
-  .fotoss{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 60vh;
-  }
-  img{
-    padding: 0 17px;
-  }
   .tit{
     display: flex;
     justify-content: center;
@@ -295,92 +285,29 @@ input:not(:placeholder-shown) ~ .reset {
     animation: btn-anim1 2s linear infinite;
   }
   
-  .buzo{
-    width: 20vw;
-    height: 45vh;
-    padding: 15px;
-    border-radius: 8%;
-    overflow: hidden;
-    border: 5px solid #000000;
-    
-}
-  .buzos{
-    display: flex;
-    align-items: center;
-    height: 60vh;
-    display: flex;
-    justify-content: space-between; /* Distribuye el espacio entre las imágenes en el contenedor */
-    padding: 10%;
-    position: relative;
-    bottom: 200px;
-  }
-  .titulobuzo{
-    font-size: 45px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center
-  }
-
-  .pantalones{
+  .remeras{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60vh;
-    justify-content: space-between; /* Distribuye el espacio entre las imágenes en el contenedor */
-    padding: 10%;
-    position: relative;
-    bottom: 200px;
+    height: 100vh;
+    gap: 50px;
     
-  }
-  .pantalone{
-    width: 20vw;
-    height: 45vh;
-    padding: 15px;
-    border-radius: 6%;
-    overflow: hidden;
-    border: 5px solid #000000;
-  }
-  .titulopantalones{
-    font-size: 45px;
+}
+.remera img{
+    width: 400px;
     display: flex;
-    flex-direction: row;
-    justify-content: center
-  }
-  .remeras{
-    display: flex;
+    flex-direction: column;
     align-items: center;
-    height: 60vh;
-    display: flex;
-    justify-content: space-between; /* Distribuye el espacio entre las imágenes en el contenedor */
-    padding: 10%;
-    position: relative;
-    bottom: 200px;
-  }
-  .remera{
-    width: 20vw;
-    height: 45vh;
-    padding: 15px;
-    border-radius: 6%;
-    overflow: hidden;
-    border: 5px solid #000000;
-  }
-  .tituloremeras{
-    font-size: 45px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center
-  }
-  
-  .centro{
-    display: grid;
-    gap: 1.5em;
-    align-items: center;
-    grid-template-columns: repeat(autofit, minmax(300px, 1fr ));
-  }
-  @media (min-width:693px) {
+    border-radius: 30px;
+}
 
-    .centro{
-      margin: unset;
-    }
-  }
-  
+.container{
+  display: flex;
+  gap: 50px;
+}
+.titulos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+}
