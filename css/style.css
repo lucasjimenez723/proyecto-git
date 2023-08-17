@@ -353,7 +353,6 @@ section {
 
 
 .modelos {
-  width: 25%;
   min-width: 200px;
   padding: 60px 40px;
   border: 2px solid #d7d7d7;
@@ -361,11 +360,10 @@ section {
   box-shadow: 20px 5px 30px rgba(0, 0, 0, 0.1);
   margin: 20px 0;
   transition: 0.2s ease;
-  position: relative;
+  
 }
 
 .model{
-  
   width: 380px;
   height: auto;
   border-radius: 8%;
@@ -383,4 +381,52 @@ flex-direction: column;
 }
 .presentacion{
   font-size: 20px;
+}
+
+
+
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.comunicacion-section {
+  background-color: #f5f5f5;
+  padding: 40px;
+  text-align: center;
+}
+.comunicacion-heading {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.social-icons {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.social-icons li {
+  display: inline-block;
+  margin: 0 10px;
+}
+.social-icons a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 20px;
+  transition: background-color 0.3s ease;
+}
+.social-icons a:hover {
+  background-color: #000000;
+}
+
+.map {
+  height: 400px;
+  width: 100%;
+  border-radius: 8%;
 }
