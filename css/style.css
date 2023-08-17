@@ -365,7 +365,8 @@ section {
 }
 
 .model{
-  width: 300px;
+  
+  width: 380px;
   height: auto;
   border-radius: 8%;
 }
