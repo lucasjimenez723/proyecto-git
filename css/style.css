@@ -64,8 +64,8 @@ ul:hover a:hover {
 p{
     
     color: #000000;
-    border: 5px solid #6cfc0c;
-    width: 50%;
+    font-size: 150%;
+    
 }
 /*barra de busqueda*/
   /* From uiverse.io by @satyamchaudharydev */
@@ -196,7 +196,7 @@ input:not(:placeholder-shown) ~ .reset {
     width: 400px;
     padding: 40px;
     transform: translate(-50%, -50%);
-    background: rgba(24, 20, 20, 0.987);
+    background: rgba(157, 116, 84, 0.987);
     box-sizing: border-box;
     box-shadow: 0 15px 25px rgba(0,0,0,.6);
     border-radius: 10px;
@@ -310,4 +310,76 @@ input:not(:placeholder-shown) ~ .reset {
   justify-content: center;
   align-items: center;
   font-size: 50px;
+}
+/*index*/
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.contenido {
+  width: 100%;
+  margin: 0% auto;
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+  border-radius: 8px;
+  padding: 2em 1em;
+}
+
+.contenido img {
+  display: flex;
+  border-radius: 80%;
+  overflow: hidden;
+  max-width: 50%;
+}
+
+.contenido p {
+  
+  max-width: 30%;
+  padding: 40px;
+}
+.producto1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+  
+}
+
+
+.modelos {
+  width: 25%;
+  min-width: 200px;
+  padding: 60px 40px;
+  border: 2px solid #d7d7d7;
+  border-radius: 15px;
+  box-shadow: 20px 5px 30px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+  transition: 0.2s ease;
+  position: relative;
+}
+
+.model{
+  width: 300px;
+  height: auto;
+  border-radius: 8%;
+}
+.introduccion {
+background-color: #f7eeca;
+color: #000000;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+.titulos{
+  font-size: 80px;
+}
+.presentacion{
+  font-size: 20px;
 }
