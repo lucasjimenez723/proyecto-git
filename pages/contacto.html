@@ -27,12 +27,28 @@
             <li><a href="./micuenta.html">Mi Cuenta</a></li>
         </ul>
     </nav>
-    <h1>h1. Bootstrap heading</h1>
-    <h2>h2. Bootstrap heading</h2>
-    <h3>h3. Bootstrap heading</h3>
-    <h4>h4. Bootstrap heading</h4>
-    <h5>h5. Bootstrap heading</h5>
-    <h6>h6. Bootstrap heading</h6>
+    <header>
+        <h1>Contacto</h1>
+    </header>
+    <main>
+        <div class="container">
+            <form id="contact-form">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Tu Empresa. Todos los derechos reservados.</p>
+    </footer>
     <script src="../biblioteca/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

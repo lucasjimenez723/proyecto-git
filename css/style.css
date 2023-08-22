@@ -252,14 +252,15 @@ input:not(:placeholder-shown) ~ .reset {
   }
   
   .login-box a:hover {
-    background: #4b0175;
+    background: rgba(157, 116, 84, 0.987);
     color: #fff;
     border-radius: 5px;
-    box-shadow: 0 0 5px #4b0175,
-                0 0 25px #4b0175,
-                0 0 50px #4b0175,
-                0 0 100px #4b0175;
-  }
+    box-shadow: 0 0 5px #ffffff,
+                0 0 25px #ffffff,
+                0 0 50px #ffffff,
+                0 0 100px #ffffff;
+}
+  
   
   .login-box a span {
     position: absolute;
@@ -281,7 +282,7 @@ input:not(:placeholder-shown) ~ .reset {
     left: -100%;
     width: 100%;
     height: 2px;
-    background: linear-gradient(90deg, transparent, #4b0175);
+    background: linear-gradient(90deg, transparent, #ffffff);
     animation: btn-anim1 2s linear infinite;
   }
   
@@ -429,4 +430,22 @@ body {
   height: 400px;
   width: 100%;
   border-radius: 8%;
+}
+
+/*Pagina de Ayuda*/
+
+.layaut img {
+  border-radius: 8px;
+  width: 100%;
+  height: auto;
+  box-shadow: 0px 0px 0px #000000;
+}
+.layaut {
+  display: grid;
+  grid-template-columns: 
+  repeat(
+    auto-fit,
+    minmax(150px, 1fr)
+  );
+  gap: 32px;
 }
