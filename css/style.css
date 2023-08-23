@@ -1,5 +1,5 @@
 body{
-  background-color: #faf5e0
+  background-color: #f2e8c2
 }
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 *{
@@ -8,31 +8,25 @@ body{
 }
 a{
     text-decoration: none;
-    color: rgb(8, 8, 8);
+    color: rgb(0, 0, 0);
     text-transform: none;
     transition: 0.25s ease;
 }
 /*Botones de inicio*/
 
+
 ul{
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
 }
 
 ul li {
-    text-decoration: none;
-    margin: 0 0.75em 0 0.75em;
+  text-decoration: none;
+  margin: 0 0.75em 0 0.75em;
 }
 
-ul:hover a {
-    color: #575757;
-}
 
-ul:hover a:hover {
-    color: #7c1885;
-    box-shadow: 0 2px 0 0 currentColor;
-}
 /*titulo principal*/
 .titulo{
     background-color: #040b221e;
@@ -83,7 +77,7 @@ p{
   --height-of-input: 40px;
   --border-height: 2px;
   --input-bg: #faf5e0;
-  --border-color: #7d0488;
+  --border-color: #ffffff;
   --border-radius: 30px;
   --after-border-radius: 1px;
   position: relative;
@@ -150,20 +144,7 @@ input:not(:placeholder-shown) ~ .reset {
   width: 17px;
   margin-top: 3px;
 }
-  /*botones de arriba*/
-.centro{
-    display: flex;
-    flex-direction: row;
-    justify-content: center
-    
-  }
 
-  .derecha{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    
-  }
 
   .tit{
     display: flex;
@@ -183,7 +164,7 @@ input:not(:placeholder-shown) ~ .reset {
     margin-top: 80px;
   }
   .video1{
-    border: 5px solid #7f058f;
+    border: 5px solid #ffffff;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -196,7 +177,7 @@ input:not(:placeholder-shown) ~ .reset {
     width: 400px;
     padding: 40px;
     transform: translate(-50%, -50%);
-    background: rgba(157, 116, 84, 0.987);
+    background: rgba(204, 174, 152, 0.987);
     box-sizing: border-box;
     box-shadow: 0 15px 25px rgba(0,0,0,.6);
     border-radius: 10px;
@@ -370,7 +351,7 @@ section {
   border-radius: 8%;
 }
 .introduccion {
-background-color: #f7eeca;
+background-color: #f2e8c2;
 color: #000000;
 display: flex;
 justify-content: center;
@@ -448,4 +429,81 @@ body {
     minmax(150px, 1fr)
   );
   gap: 32px;
+}
+
+/*menu hamburguesa*/
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: #f2e8c2;
+}
+
+
+
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: #1c1c1c;
+}
+
+.abrir-menu,
+.cerrar-menu {
+  display: none;
+}
+
+@media screen and (max-width: 550px) {
+  .abrir-menu,
+  .cerrar-menu {
+      display: block;
+      border: 0;
+      font-size: 1.25rem;
+      background-color: transparent;
+      cursor: pointer;
+  }
+
+  .abrir-menu {
+      color: #1c1c1c;
+  }
+
+  .cerrar-menu {
+      color: #ececec;
+  }
+
+  .nav {
+      opacity: 0;
+      visibility: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      gap: 1rem;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #1c1c1c;
+      padding: 2rem;
+      box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+  }
+
+  .nav.visible {
+      opacity: 1;
+      visibility: visible;
+  }
+  
+  .nav-list {
+      flex-direction: column;
+      align-items: end;
+  }
+
+  .nav-list li a {
+      color: #ecececec;
+  }
 }

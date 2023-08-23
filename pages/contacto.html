@@ -10,23 +10,24 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../biblioteca/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 </head>
 <body>
-    <h2 class="titulo">One Street</h2>
-    <nav class="centro">
-        <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="#">Contacto</a></li>
-            <li><a href="./producto.html">Producto</a></li>
-
-        </ul>
-    </nav>
-    <nav class="derecha">
-        <ul>
-            <li><a href="./ayuda.html">Ayuda</a></li>
-            <li><a href="./micuenta.html">Mi Cuenta</a></li>
-        </ul>
-    </nav>
+    <header>
+        <h2 class="titulo">One Street</h2>
+        <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+        <nav class="nav" id="nav">
+            <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
+            <ul class="nav-list">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="./producto.html">Producto</a></li>
+                <li><a href="./ayuda.html">Ayuda</a></li>
+                <li><a href="./micuenta.html">Mi Cuenta</a></li>
+            </ul>
+        </nav>
+    </header>
+    
     <header>
         <h1>Contacto</h1>
     </header>
@@ -50,5 +51,6 @@
         <p>&copy; 2023 Tu Empresa. Todos los derechos reservados.</p>
     </footer>
     <script src="../biblioteca/js/bootstrap.bundle.min.js"></script>
+        <script src="../main.js"></script>
 </body>
 </html>
