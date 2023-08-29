@@ -483,5 +483,15 @@ header {
 
     width: 250px;
   }
+  .presentacion{
+    padding: 10px 50px 20px;
+  }
+  .preguntas-titulo {
+    font-size: 30px;
+  }
+  .preguntas-texto {
+    font-size: 15px;
+  }
+  
 }
 /*# sourceMappingURL=style.css.map */
