@@ -1,3 +1,4 @@
+/*Tipo de letra*/
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 body {
   background-color: #f2e8c2;
@@ -147,14 +148,7 @@ h1 {
   margin-top: 80px;
 }
 
-.video1 {
-  border: 5px solid #ffffff;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
+/*Pagina de mi cuenta*/
 .login-box {
   position: absolute;
   top: 50%;
@@ -320,6 +314,7 @@ section {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  
 }
 
 .titulos {
@@ -437,7 +432,7 @@ header {
   display: none;
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 850px) {
   .abrir-menu,
   .cerrar-menu {
     display: block;
@@ -483,4 +478,10 @@ header {
   transform: scale(1.1);
 }
 
+@media screen and (max-width: 850px){
+  .layout img {
+
+    width: 250px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
