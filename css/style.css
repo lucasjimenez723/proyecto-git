@@ -381,19 +381,14 @@ body {
 }
 
 /*Pagina de Ayuda*/
-.layout {
-  width: 1366px;
-  height: 768px;
+.contenedor {
   display: flex;
-  flex-direction: row-reverse;
-  gap: 30px;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: center;
 }
 
-.layout img {
-  width: 250px;
+.layout {
+  width: 150px;
 }
 
 .layout-text {
