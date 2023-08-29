@@ -388,20 +388,28 @@ body {
 }
 
 .layout {
-  width: 150px;
+  display: flex;
+  align-items: center;
+  flex-flow: wrap;
+  justify-content: space-around;
+  padding: 20px;
+  font-size: 20PX;
+}
+.layout img {
+  width: 400px;
 }
 
-.layout-text {
-  font-size: 20px;
-}
 
 .preguntas {
   display: flex;
   align-items: start;
 }
 
-.texto-ayuda {
-  font-size: 13px;
+.preguntas-titulo {
+  font-size: 40px;
+}
+.preguntas-texto {
+  font-size: 20px;
 }
 
 /*menu hamburguesa*/
