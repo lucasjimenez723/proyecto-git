@@ -381,6 +381,9 @@ body {
   align-items: center;
   justify-content: center;
 }
+.centrar {
+  text-align: center;
+}
 
 .layout {
   display: flex;
@@ -495,3 +498,6 @@ header {
   
 }
 /*# sourceMappingURL=style.css.map */
+.img-ayuda{
+  border-radius: 35px;
+}
