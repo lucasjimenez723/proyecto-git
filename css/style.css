@@ -239,7 +239,10 @@ h1 {
   background: linear-gradient(90deg, transparent, #ffffff);
   animation: btn-anim1 2s linear infinite;
 }
-
+.login-cuenta {
+  color: #f5f5f5;
+  text-align: center;
+}
 .container {
   display: flex;
   gap: 50px;
@@ -253,6 +256,12 @@ h1 {
 }
 
 /*index*/
+@media screen and (max-width: 850px){
+  .video-index, .mapa-index{
+    width: 350px;
+    height: 250px;
+  }
+}
 section {
   display: flex;
   flex-direction: column;
@@ -501,3 +510,137 @@ header {
 .img-ayuda{
   border-radius: 35px;
 }
+/*Pagina de Contacto*/
+@media screen and (max-width: 850px){
+  .contacto-section {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    width: 400px;
+    padding: 50px;
+  }
+  .input-container input {
+    padding: 1rem;
+    padding-right: 3rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    width: 300px;
+  
+}
+}
+
+.contacto-pag {
+  position: absolute;
+  top: 25%;
+  left: 28%;
+  width: 500px;
+  padding: 50px;
+
+}
+
+.form-title {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+  text-align: center;
+  color: #000;
+}
+
+
+
+.input-container input, .form button {
+  outline: none;
+  border: 1px solid #000000;
+  margin: 12px 0;
+}
+
+.input-container input {
+  background-color: #ffffff;
+  padding: 1rem;
+  padding-right: 3rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  width: 800px;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+button {
+  font-family: inherit;
+  font-size: 20px;
+  background: rgb(0, 0, 0);
+  color: white;
+  padding: 0.7em 1em;
+  padding-left: 0.9em;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.2s;
+}
+
+button span {
+  display: block;
+  margin-left: 0.3em;
+  transition: all 0.3s ease-in-out;
+}
+
+button svg {
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+}
+
+button:hover .svg-wrapper {
+  animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+button:hover svg {
+  transform: translateX(1.2em) rotate(45deg) scale(1.1);
+}
+
+button:hover span {
+  transform: translateX(5em);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+  from {
+    transform: translateY(0.1em);
+  }
+
+  to {
+    transform: translateY(-0.1em);
+  }
+}
+
+.contacto-section {
+  position: absolute;
+  top: 2%;
+  left: 5%;
+  width: 400px;
+  padding: 50px;
+}
+.titulo-neon {
+  font-family: "poppins";
+  color: #333;
+  text-align: center;
+  line-height: 5vh;
+  font-size: 4rem;
+}
+.titulo-neon:hover {
+  color: #fff;
+  text-shadow: 0 0 10px
+  #fff,
+  0 0 20px #fff,
+  0 0 40px #e3dd9a,
+  0 0 80px #fff
+  ;
+}
+
+
+
+

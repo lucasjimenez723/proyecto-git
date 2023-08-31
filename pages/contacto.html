@@ -8,8 +8,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <!--JSBOOSTRAP-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../biblioteca/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../scss/estilos.scss">
+    <script src="https://kit.fontawesome.com/0cf5bdbb57.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 </head>
 <body>
@@ -27,17 +28,61 @@
             </ul>
         </nav>
     </header>
-    
-    
+    <form class="contacto-pag">
+        <p class="titulo-neon">One Street</p>
+        <div class="input-container">
+            <input type="text" placeholder="Nombre">
+            <span>
+            </span>
+        </div>
+        <div class="input-container">
+            <input type="email" placeholder="Email">
+            <span>
+            </span>
+        </div>
+        <div class="input-container">
+            <input type="text" placeholder="Telefono">
+            <span>
+            </span>
+        </div>
+        <div class="input-container">
+            <input type="text" placeholder="Mensaje">
+            <span>
+            </span>
+        </div>
+        <button>
+            <div class="svg-wrapper-1">
+            <div class="svg-wrapper">
+                <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z" fill="currentColor"></path>
+                </svg>
+            </div>
+            </div>
+            <span>Send</span>
+        </button>
+    </form>
+    <div class="contacto-section">
         <h1>Contacto</h1>
-    
-    
-    
-    
-    <footer>
-        <p>&copy; 2023 Tu Empresa. Todos los derechos reservados.</p>
-    </footer>
-    <script src="../biblioteca/js/bootstrap.bundle.min.js"></script>
+        <ul class="contacto-info">
+            <li>
+                <i class="fa-brands fa-whatsapp"></i>
+                <a href="wa.me/5493888344514">5493888344514</a>
+            </li>
+            <li>
+                <i class="fa-regular fa-envelope" style="color: #000000;"></i>
+                <a href="lucasjimenes553@gmail.com">lucasjimenez553@gmail.com</a>
+            </li>
+            <li>
+                <i class="fa-solid fa-phone" style="color: #000000;"></i>
+                <a href="#">3888344514</a>
+            </li>
+            <li>
+                <i class="fa-solid fa-map-pin" style="color: #000000;"></i>
+                <a href="https://www.google.com/maps/place/Dakota+Indumentaria/@-24.774,-65.398584,10z/data=!4m6!3m5!1s0x941bc3f9ee4e689f:0x2bafa491afdd2033!8m2!3d-24.7740001!4d-65.3985845!16s%2Fg%2F11f7ptr42k?hl=es&entry=ttu">Av. Bicentenario Salta 1370</a>
+            </li>
+        </ul>
+    </div>
         <script src="../main.js"></script>
 </body>
 </html>
