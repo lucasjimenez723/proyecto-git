@@ -512,28 +512,29 @@ header {
 }
 /*Pagina de Contacto*/
 @media screen and (max-width: 850px){
-  .contacto-section {
-    position: absolute;
-    top: 50%;
-    left: 5%;
-    width: 400px;
-    padding: 50px;
-  }
   .input-container input {
+    width: 100%;
     padding: 1rem;
     padding-right: 3rem;
     font-size: 0.875rem;
     line-height: 1.25rem;
-    width: 300px;
+    border-radius: 0.5rem;
+  }
+  .contacto-pag {
+    top: 30%;
+    left: 28%;
+    width: 100%;
+    padding: 50px;
   
-}
+  }
+  
 }
 
 .contacto-pag {
   position: absolute;
   top: 25%;
   left: 28%;
-  width: 500px;
+  width: 100%;
   padding: 50px;
 
 }
@@ -560,7 +561,7 @@ header {
   padding-right: 3rem;
   font-size: 0.875rem;
   line-height: 1.25rem;
-  width: 800px;
+  width: 40%;
   border-radius: 0.5rem;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
 }
@@ -619,17 +620,18 @@ button:active {
 
 .contacto-section {
   position: absolute;
-  top: 2%;
-  left: 5%;
+  top: 1%;
+  left: 2%;
   width: 400px;
   padding: 50px;
 }
 .titulo-neon {
+  
   font-family: "poppins";
   color: #333;
   text-align: center;
   line-height: 5vh;
-  font-size: 4rem;
+  font-size: 5rem;
 }
 .titulo-neon:hover {
   color: #fff;
