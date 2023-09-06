@@ -512,20 +512,12 @@ header {
 }
 /*Pagina de Contacto*/
 @media screen and (max-width: 850px){
-  .input-container input {
-    width: 100%;
-    padding: 1rem;
-    padding-right: 3rem;
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-    border-radius: 0.5rem;
-  }
-  .contacto-pag {
-    top: 30%;
-    left: 28%;
+  .contacto-section {
+    
+    top: 50%;
+    left: 2%;
     width: 100%;
     padding: 50px;
-  
   }
   
 }
