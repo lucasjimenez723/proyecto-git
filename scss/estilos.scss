@@ -226,16 +226,15 @@ body{
       overflow: hidden;
       transition: .5s;
       margin-top: 40px;
-      letter-spacing: 4px
+      letter-spacing: 4px;
+
+      &:hover{
+        background: rgba(157, 116, 84, 0.987);
+        color: #fff;
+        border-radius: 5px;
+        box-shadow: $box-shadow;
+      }
     }
-    
-    .login-box a:hover {
-      background: rgba(157, 116, 84, 0.987);
-      color: #fff;
-      border-radius: 5px;
-      box-shadow: $box-shadow;
-  }
-    
     
     .login-box a span {
       position: absolute;
@@ -375,9 +374,10 @@ body{
     color: #ffffff;
     font-size: 20px;
     transition: background-color 0.3s ease;
-  }
-  .social-icons a:hover {
-    background-color: #000000;
+
+    &:hover{
+      background-color: #000000;
+    }
   }
   
   .map {
